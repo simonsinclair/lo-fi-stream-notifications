@@ -1,0 +1,57 @@
+// _stream.scss
+//
+
+.stream {
+  margin-top: 40px;
+}
+.stream__header {
+  background-color: #EEE;
+  border-bottom: 1px solid #DCDCDC;
+  height: 56px;
+}
+
+// STREAM CONTENT
+//
+
+.stream__window {
+  margin: 72px 84px;
+}
+  .stream__day-sep {
+    background-color: #DCDCDC;
+    height: 1px;
+  }
+
+  // Unit
+  .stream__unit {
+    @extend .clearfix;
+    padding-top: 32px;
+  }
+    .unit__timestamp {
+      float: left;
+      height: 24px;
+      margin-right: 64px;
+      width: 72px;
+    }
+    .unit__article {
+      float: left;
+      padding-right: 136px;
+      width: 672px;
+    }
+      .unit__title {
+        height: 24px;
+        margin-bottom: 12px;
+        width: 424px;
+      }
+      .unit__author {
+        height: 64px;
+        margin-bottom: 12px;
+        width: 64px;
+      }
+      .unit__body {
+        height: 72px;
+        margin-bottom: 32px;
+      }
+      .unit__sep {
+        background-color: #DCDCDC;
+        height: 1px;
+      }

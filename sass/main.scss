@@ -16,10 +16,113 @@ body {
   font-size: 16px;
   line-height: 22px; // 1.4
 }
+img {
+  max-width: 100%;
+}
 
 // PAGE
 //
 
+// Structure
+.blq {
+  border-bottom: 1px solid #CCC;
+  height: 40px;
+}
+.masthead {
+  background-color: #CC0101;
+  height: 56px;
+}
+.primary-nav {
+  background-color: #CC0101;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  height: 40px;
+}
+.page {
+  margin: 48px auto 0;
+  width: 976px;
+}
+.secondary-nav {
+
+  li {
+    margin-right: 24px;
+  }
+}
+.footer {
+  background-color: #4C4C4C;
+  height: 382px;
+}
+
+// Lo-fi
+.ph {
+  background-color: #EEE;
+}
+
+// Featured
+.featured {
+  @extend .clearfix;
+  margin-top: 42px;
+}
+.featured__article {
+  @extend .clearfix;
+  float: left;
+  width: 66%;
+
+  img {
+    display: block;
+    float: left;
+    padding-right: 16px;
+    width: 50%;
+  }
+}
+  .article__title,
+  .article__body,
+  .article__timestamp {
+    float: left;
+    width: 50%;
+  }
+  .article__title {
+    margin-bottom: 8px;
+    height: 32px;
+  }
+  .article__body {
+    margin-bottom: 16px;
+    height: 72px;
+  }
+  .article__timestamp {
+    height: 12px;
+    width: 34%;
+  }
+.featured__list {
+  float: left;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 42px;
+  width: 34%;
+
+  li {
+    border-bottom: 1px solid #DCDCDC;
+    height: 32px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+// Stream
+@import 'stream';
+
+// Objects
+.nav {
+  @extend .clearfix;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    float: left;
+  }
+}
 
 // Utility
 //
