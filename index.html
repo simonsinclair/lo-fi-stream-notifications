@@ -56,7 +56,6 @@
         </a>
 
         <div id="js-stream-window" class="stream__window">
-          <div class="stream__day-sep"></div>
 
           <div class="stream__unit">
             <div class="ph unit__timestamp"></div>
@@ -161,8 +160,8 @@
           <div class="load-more"></div>
 
           <!-- New articles get put here -->
-          <div id="js-stream-bucket">
-            <div class="stream__unit">
+          <div id="js-stream-queue" class="stream__queue">
+            <div class="stream__unit stream__unit--queued js-queue-item">
               <div class="ph unit__timestamp"></div>
               <div class="unit__article">
                 <div class="ph unit__title"></div>
@@ -172,7 +171,7 @@
               </div>
             </div>
 
-            <div class="stream__unit">
+            <div class="stream__unit stream__unit--queued js-queue-item">
               <div class="ph unit__timestamp"></div>
               <div class="unit__article">
                 <div class="ph unit__title"></div>
@@ -182,7 +181,7 @@
               </div>
             </div>
 
-            <div class="stream__unit">
+            <div class="stream__unit stream__unit--queued js-queue-item">
               <div class="ph unit__timestamp"></div>
               <div class="unit__article">
                 <div class="ph unit__title"></div>
