@@ -41,10 +41,21 @@
         </ul>
       </div>
 
-      <div class="stream">
+      <div id="js-stream" class="stream">
+
+        <a
+          id="js-stream-notification"
+          class="stream__notification" href="#js-stream">
+            3 new articles
+        </a>
+
         <div class="stream__header"></div>
 
-        <div class="stream__window">
+        <a href="#" id="js-stream-load-more" class="stream__load-more">
+          <span>3 new articles</span>
+        </a>
+
+        <div id="js-stream-window" class="stream__window">
           <div class="stream__day-sep"></div>
 
           <div class="stream__unit">
@@ -149,6 +160,38 @@
 
           <div class="load-more"></div>
 
+          <!-- New articles get put here -->
+          <div id="js-stream-bucket">
+            <div class="stream__unit">
+              <div class="ph unit__timestamp"></div>
+              <div class="unit__article">
+                <div class="ph unit__title"></div>
+                <div class="ph unit__author"></div>
+                <div class="ph unit__body"></div>
+                <div class="unit__sep"></div>
+              </div>
+            </div>
+
+            <div class="stream__unit">
+              <div class="ph unit__timestamp"></div>
+              <div class="unit__article">
+                <div class="ph unit__title"></div>
+                <div class="ph unit__author"></div>
+                <div class="ph unit__body"></div>
+                <div class="unit__sep"></div>
+              </div>
+            </div>
+
+            <div class="stream__unit">
+              <div class="ph unit__timestamp"></div>
+              <div class="unit__article">
+                <div class="ph unit__title"></div>
+                <div class="ph unit__author"></div>
+                <div class="ph unit__body"></div>
+                <div class="unit__sep"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

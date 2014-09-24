@@ -4,17 +4,52 @@
 .stream {
   margin-top: 40px;
 }
-.stream__header {
-  background-color: #EEE;
-  border-bottom: 1px solid #DCDCDC;
-  height: 56px;
-}
+  .stream__notification {
+    background-color: #CC0101;
+    color: #FFF;
+    padding: 4px 24px;
+    position: fixed;
+      top: 16px; left: 50%;
+    transition: transform 150ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transform: translateX(-50%) translateY(-46px);
+  }
+  .stream__notification--visible {
+    transform: translateX(-50%) translateY(0);
+    transition: transform 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  // Toolbar
+  .stream__header {
+    background-color: #EEE;
+    border-bottom: 1px solid #DCDCDC;
+    height: 56px;
+  }
+
+  // Load More CTA
+  .stream__load-more {
+    display: block;
+    line-height: 72px;
+    height: 72px;
+    text-align: center;
+
+    span {
+      opacity: 0;
+      transition: opacity 150ms ease-in;
+    }
+  }
+  .stream__load-more--visible {
+
+    span {
+      opacity: 1;
+      transition: opacity 150ms ease-out;
+    }
+  }
 
 // STREAM CONTENT
 //
 
 .stream__window {
-  margin: 72px 84px;
+  margin: 0 84px;
 }
   .stream__day-sep {
     background-color: #DCDCDC;

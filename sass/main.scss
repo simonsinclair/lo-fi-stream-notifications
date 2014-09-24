@@ -10,11 +10,16 @@
 }
 html {
   box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
 }
 body {
   color: #333;
   font-size: 16px;
   line-height: 22px; // 1.4
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
 }
 img {
   max-width: 100%;
