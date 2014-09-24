@@ -27,21 +27,25 @@
 
   // Load More CTA
   .stream__load-more {
+    border-bottom: 1px solid #DCDCDC;
+    cursor: default;
     display: block;
-    line-height: 72px;
     height: 72px;
+    line-height: 72px;
+    margin: 0 84px;
     text-align: center;
 
     span {
       opacity: 0;
-      transition: opacity 150ms ease-in;
+      // transition: opacity 150ms ease-in;
     }
   }
   .stream__load-more--visible {
+    cursor: pointer;
 
     span {
       opacity: 1;
-      transition: opacity 150ms ease-out;
+      // transition: opacity 150ms ease-out;
     }
   }
 
@@ -51,16 +55,18 @@
 .stream__window {
   margin: 0 84px 72px;
 }
-  .stream__day-sep {
-    background-color: #DCDCDC;
-    height: 1px;
-  }
 
   // Unit
   .stream__unit {
     @extend .clearfix;
+    background-color: #FFF;
     padding-top: 32px;
+    transition: background-color 5s ease-in;
   }
+  .stream__unit--queued {
+    background-color: #FFC; // GMail
+  }
+
     .unit__timestamp {
       float: left;
       height: 24px;
