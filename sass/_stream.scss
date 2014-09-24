@@ -49,7 +49,7 @@
 //
 
 .stream__window {
-  margin: 0 84px;
+  margin: 0 84px 72px;
 }
   .stream__day-sep {
     background-color: #DCDCDC;
@@ -91,7 +91,12 @@
         height: 1px;
       }
 
- // Misc
+// Queue
+.stream__queue {
+  display: none;
+}
+
+// Misc
   .load-more {
     background-color: #999;
     border-bottom: 1px solid #777;

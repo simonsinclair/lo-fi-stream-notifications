@@ -23,8 +23,15 @@
     },
 
     bindEvts: function() {
+      $(window).on('scroll', Stream.handleScroll);
       $(document).on('keyup', Stream.handleKeyup);
       Stream.$loadMore.on('click', Stream.loadQueuedArticles);
+    },
+
+    handleScroll: function() {
+      var scrollTop = $(window).scrollTop();
+
+      console.log(scrollTop);
     },
 
     handleKeyup: function(e) {
